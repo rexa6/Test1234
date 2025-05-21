@@ -129,10 +129,21 @@ footer {
 @media (max-width: 480px) {
   .header-container {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
   }
 
   .nav-menu {
-    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-menu a {
+    flex: 1 1 45%;
+    text-align: center;
+    margin: 8px 5px;
+    margin-left: 0 !important; 
   }
 }
